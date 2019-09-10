@@ -1,0 +1,194 @@
+$color-base: #777777;
+$color-secondary: #dcdcdc;
+$color-white: #ffffff;
+
+/* -----  common styles ---- */
+.section-inner{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.section-outer{
+	padding: 24px 70px;
+}
+
+body{
+	font-family: 'Arial';
+	font-size: 14px;
+	line-height: 22px;
+	padding: 0;
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+}
+
+p{
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+.section-hr{
+	padding:0;
+	margin: 0;
+	hr{
+		//border: 0;
+		max-width: 960px;
+		height: 1px;
+		padding:0;
+		color: $color-base;
+	}
+}
+
+/* ----- / common styles ---- */
+
+
+/* -----   header ---- */
+
+.section-header{
+	display: flex;
+	justify-content: space-between;
+	//flex-direction: row;
+	//height: 108px
+	//position: relative;
+	&-logo{
+		//background: $color-base;
+		//position: absolute;
+		//left: 0;
+		width: 122px; 
+		height: 108px;
+		img{
+			width: 122px; 
+			height: 108px;
+			border: 0;
+		}
+	}
+	&-center{
+		width: 279px; 
+		height: 108px;
+		//left: 145px;
+		background: $color-base;
+		//position: absolute;
+	}
+	&-info{
+		color: $color-white;
+		//right: 0;
+		width: 513px; 
+		height: 108px;
+		padding: 25px;
+		background: $color-base;
+		// position: absolute;
+		display: flex;
+		align-items: end;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+/* ----- / header ---- */
+
+/* -----   content ---- */
+
+.section-content{
+	display: flex;
+	justify-content: space-between;
+	&-left{
+		width:184px;
+		display: flex;
+		flex-direction: column;
+		.creation-sites{
+			color: $color-white;
+			background: $color-base;
+			padding: 19px 32px 17px 13px;
+			ul{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		.creation-sites-img{
+			align-self: flex-end;
+			img{
+				width: 184px; 
+				height: 134px;
+			}
+		}
+	}
+//134 153
+	&-right{
+		display: flex;
+		flex-direction: column;
+		width: 757px;
+
+		.psd{
+			display: flex;
+			flex-direction: column;
+			height: 210px;
+			padding:21px;
+			background: $color-secondary;
+			color: $color-base;
+			justify-content: space-between;
+			&-title{
+				font-weight: bold;
+			}
+
+			& span{
+				font-weight: bold;
+			}
+		}
+
+		&-image{
+			display: flex;
+			flex-wrap: wrap;
+			img{
+				margin-top: 20px;
+				width:134px;
+				height:153px;
+				background-color: $color-secondary;
+			}
+		}
+
+		&-text{
+			display: flex;
+			justify-content: space-between;
+			padding-top: 20px;
+			.about-studio{
+				background: $color-secondary;
+				//height: 200px;
+				width:368px;
+				padding:23px 18px; 
+			}
+		}
+	}
+
+}
+
+/* ----- / content ---- */
+
+
+/* -----   footer ---- */
+
+ .section-footer{
+ 	display: flex;
+	justify-content: space-between;
+ 	&-list{
+ 		background: $color-base;
+ 		color: $color-white;
+ 		width: 297px;
+ 		height: 180px;
+ 	}
+
+ 	&-block{
+		width: 308px;
+		height: 180px;
+ 	}
+
+ 	.second-list{
+ 		ul{
+ 			list-style-type: square;
+ 		}
+ 	}
+ }
+
+/* ----- / footer ---- */

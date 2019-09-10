@@ -1,0 +1,178 @@
+/* -----  common styles ---- */
+.section-inner {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.section-outer {
+  padding: 24px 70px; }
+
+body {
+  font-family: 'Arial';
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+p {
+  font-weight: bold;
+  padding: 0;
+  margin: 0; }
+
+.section-hr {
+  padding: 0;
+  margin: 0; }
+  .section-hr hr {
+    max-width: 960px;
+    height: 1px;
+    padding: 0;
+    color: #777777; }
+
+/* ----- / common styles ---- */
+/* -----   header ---- */
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .section-header-logo {
+    width: 122px;
+    height: 108px; }
+    .section-header-logo img {
+      width: 122px;
+      height: 108px;
+      border: 0; }
+  .section-header-center {
+    width: 279px;
+    height: 108px;
+    background: #777777; }
+  .section-header-info {
+    color: #ffffff;
+    width: 513px;
+    height: 108px;
+    padding: 25px;
+    background: #777777;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+/* ----- / header ---- */
+/* -----   content ---- */
+.section-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .section-content-left {
+    width: 184px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .section-content-left .creation-sites {
+      color: #ffffff;
+      background: #777777;
+      padding: 19px 32px 17px 13px; }
+      .section-content-left .creation-sites ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+    .section-content-left .creation-sites-img {
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+      .section-content-left .creation-sites-img img {
+        width: 184px;
+        height: 134px; }
+  .section-content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 757px; }
+    .section-content-right .psd {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 210px;
+      padding: 21px;
+      background: #dcdcdc;
+      color: #777777;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .section-content-right .psd-title {
+        font-weight: bold; }
+      .section-content-right .psd span {
+        font-weight: bold; }
+    .section-content-right-image {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .section-content-right-image img {
+        margin-top: 20px;
+        width: 134px;
+        height: 153px;
+        background-color: #dcdcdc; }
+    .section-content-right-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-top: 20px; }
+      .section-content-right-text .about-studio {
+        background: #dcdcdc;
+        width: 368px;
+        padding: 23px 18px; }
+
+/* ----- / content ---- */
+/* -----   footer ---- */
+.section-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .section-footer-list {
+    background: #777777;
+    color: #ffffff;
+    width: 297px;
+    height: 180px; }
+  .section-footer-block {
+    width: 308px;
+    height: 180px; }
+  .section-footer .second-list ul {
+    list-style-type: square; }
+
+/* ----- / footer ---- */
