@@ -3,22 +3,22 @@ $color-secondary: #dcdcdc;
 $color-white: #ffffff;
 
 /* -----  common styles ---- */
-.section-inner{
-	max-width: 960px;
-	margin: 0 auto;
+.wrapper{
+	padding: 24px;
+ 	width: 100%; 
+
+ 	&-inner{
+ 		width: 960px;
+		margin: 0 auto;
+	}
 }
 
-.section-outer{
-	padding: 24px 24px;
-}
 
 body{
 	font-family: 'Arial';
 	font-size: 14px;
 	line-height: 22px;
-	padding: 0;
 	margin: 0;
-	//position: relative;
 }
 *{
 	box-sizing: border-box;
@@ -31,14 +31,13 @@ p{
 }
 
 .section-hr{
-	padding:0;
-	margin: 0;
 	hr{
-		//border: 0;
-		max-width: 960px;
+		width: 960px;
 		height: 1px;
 		padding:0;
 		color: $color-base;
+		margin-top: 20px;
+		margin-bottom: 20px; 
 	}
 }
 
@@ -49,14 +48,10 @@ p{
 
 .section-header{
 	display: flex;
+	position: relative;
+	top: 0;
 	justify-content: space-between;
-	//flex-direction: row;
-	//height: 108px
-	//position: relative;
 	&-logo{
-		//background: $color-base;
-		//position: absolute;
-		//left: 0;
 		width: 122px; 
 		height: 108px;
 		img{
@@ -68,22 +63,18 @@ p{
 	&-center{
 		width: 279px; 
 		height: 108px;
-		//left: 145px;
 		background: $color-base;
-		//position: absolute;
 	}
 	&-info{
 		color: $color-white;
-		//right: 0;
 		width: 513px; 
 		height: 108px;
-		padding: 25px;
+		padding-right: 25px;
 		background: $color-base;
-		// position: absolute;
 		display: flex;
-		align-items: end;
+		align-items: flex-end;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
 
 		.email, .website{
 			text-decoration: underline;
@@ -98,6 +89,7 @@ p{
 .section-content{
 	display: flex;
 	justify-content: space-between;
+	
 	&-left{
 		width:184px;
 		display: flex;
@@ -114,7 +106,8 @@ p{
 			}
 		}
 		.creation-sites-img{
-			height: 134px;
+			height: 154px;
+			padding-top:20px; 
 			img{
 				width: 184px; 
 				height: 134px;
@@ -125,6 +118,7 @@ p{
 	&-right{
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		width: 757px;
 
 		.psd{
@@ -147,13 +141,18 @@ p{
 		&-image{
 			display: flex;
 			flex-wrap: wrap;
-
 			img{
 				margin-top: 20px;
 				width:134px;
 				height:153px;
 				background-color: $color-secondary;
 			}
+			:not(:nth-child(5n)) {
+    		margin-right: 22px;
+    		}
+    		:nth-child(4n) {
+    		margin-right: 21px;
+    		}
 		}
 
 		&-text{
@@ -162,7 +161,6 @@ p{
 			padding-top: 20px;
 			.about-studio{
 				background: $color-secondary;
-				//height: 200px;
 				width:368px;
 				padding:23px 18px; 
 			}
@@ -178,12 +176,12 @@ p{
 
  .section-footer{
  	display: flex;
+ 	position: relative;
 	justify-content: space-between;
  	&-list{
  		background: $color-base;
  		color: $color-white;
  		width: 297px;
- 		//height: 180px;
  	}
 
  	&-block{
