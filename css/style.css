@@ -4,7 +4,7 @@
   margin: 0 auto; }
 
 .section-outer {
-  padding: 24px 70px; }
+  padding: 24px 24px; }
 
 body {
   font-family: 'Arial';
@@ -70,6 +70,8 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .section-header-info .email, .section-header-info .website {
+      text-decoration: underline; }
 
 /* ----- / header ---- */
 /* -----   content ---- */
@@ -88,7 +90,10 @@ p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .section-content-left .creation-sites {
       color: #ffffff;
       background: #777777;
@@ -98,8 +103,7 @@ p {
         padding: 0;
         margin: 0; }
     .section-content-left .creation-sites-img {
-      -ms-flex-item-align: end;
-          align-self: flex-end; }
+      height: 134px; }
       .section-content-left .creation-sites-img img {
         width: 184px;
         height: 134px; }
@@ -167,11 +171,33 @@ p {
   .section-footer-list {
     background: #777777;
     color: #ffffff;
-    width: 297px;
-    height: 180px; }
+    width: 297px; }
   .section-footer-block {
-    width: 308px;
-    height: 180px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 308px; }
+    .section-footer-block .block {
+      height: 75px;
+      background: #777777; }
+    .section-footer-block .image {
+      height: 75px; }
+      .section-footer-block .image img {
+        height: 75px;
+        width: 308px; }
+  .section-footer .first-list ul {
+    list-style: none;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    padding-left: 25px; }
   .section-footer .second-list ul {
     list-style-type: square; }
 

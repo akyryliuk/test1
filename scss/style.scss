@@ -9,7 +9,7 @@ $color-white: #ffffff;
 }
 
 .section-outer{
-	padding: 24px 70px;
+	padding: 24px 24px;
 }
 
 body{
@@ -18,6 +18,7 @@ body{
 	line-height: 22px;
 	padding: 0;
 	margin: 0;
+	//position: relative;
 }
 *{
 	box-sizing: border-box;
@@ -83,6 +84,10 @@ p{
 		align-items: end;
 		flex-direction: column;
 		justify-content: space-between;
+
+		.email, .website{
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -97,6 +102,7 @@ p{
 		width:184px;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		.creation-sites{
 			color: $color-white;
 			background: $color-base;
@@ -108,14 +114,14 @@ p{
 			}
 		}
 		.creation-sites-img{
-			align-self: flex-end;
+			height: 134px;
 			img{
 				width: 184px; 
 				height: 134px;
 			}
 		}
 	}
-//134 153
+
 	&-right{
 		display: flex;
 		flex-direction: column;
@@ -141,6 +147,7 @@ p{
 		&-image{
 			display: flex;
 			flex-wrap: wrap;
+
 			img{
 				margin-top: 20px;
 				width:134px;
@@ -176,12 +183,33 @@ p{
  		background: $color-base;
  		color: $color-white;
  		width: 297px;
- 		height: 180px;
+ 		//height: 180px;
  	}
 
  	&-block{
+ 		display: flex;
+ 		flex-direction: column;
+		justify-content: space-between;
 		width: 308px;
-		height: 180px;
+		.block{
+			height: 75px;	
+			background: $color-base;
+		}
+		.image{
+			height: 75px;
+			img{
+				height: 75px;
+				width: 308px;	
+			}
+		}
+		
+ 	}
+ 	.first-list{
+ 		ul{
+ 			list-style: none;
+ 			column-count: 2;
+ 			padding-left: 25px;
+ 		}
  	}
 
  	.second-list{
