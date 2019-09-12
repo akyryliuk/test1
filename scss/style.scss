@@ -5,12 +5,12 @@ $color-white: #ffffff;
 /* -----  common styles ---- */
 .wrapper{
 	padding: 24px;
- 	width: 100%; 
-
- 	&-inner{
- 		width: 960px;
-		margin: 0 auto;
-	}
+ 	width: 1008px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 
@@ -48,7 +48,6 @@ p{
 
 .section-header{
 	display: flex;
-	position: relative;
 	top: 0;
 	justify-content: space-between;
 	&-logo{
@@ -163,6 +162,7 @@ p{
 				background: $color-secondary;
 				width:368px;
 				padding:23px 18px; 
+				color: $color-base;
 			}
 		}
 	}
@@ -176,7 +176,6 @@ p{
 
  .section-footer{
  	display: flex;
- 	position: relative;
 	justify-content: space-between;
  	&-list{
  		background: $color-base;
